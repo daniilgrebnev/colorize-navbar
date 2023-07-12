@@ -47,8 +47,8 @@ const Navbar = () => {
 						<p
 							className={
 								transition
-									? 'text-2xl font-bold transition-all relative left-auto min-w-[300px]   '
-									: 'text-2xl font-bold transition-all relative -left-[400px] min-w-[300px]'
+									? 'text-2xl font-bold transition-all duration-500 relative left-auto min-w-[300px]   '
+									: 'text-2xl font-bold transition-all duration-500 relative -left-[400px] min-w-[300px]'
 							}
 						>
 							<i className='font-normal text-sm mr-3'> by </i> Daniil Grebnev

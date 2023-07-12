@@ -1,6 +1,6 @@
 {
   "/page": "app/page.js",
+  "/tailwind/page": "app/tailwind/page.js",
   "/nextjs/page": "app/nextjs/page.js",
-  "/cart/page": "app/cart/page.js",
-  "/tailwind/page": "app/tailwind/page.js"
+  "/cart/page": "app/cart/page.js"
 }

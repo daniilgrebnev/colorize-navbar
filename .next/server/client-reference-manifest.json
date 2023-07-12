@@ -173,10 +173,10 @@
     }
   },
   "entryCSSFiles": {
-    "/Users/danilgrebnev/Documents/colorize-navbar/src/app/page": [],
     "/Users/danilgrebnev/Documents/colorize-navbar/src/app/layout": [
       "static/css/app/layout.css"
     ],
+    "/Users/danilgrebnev/Documents/colorize-navbar/src/app/page": [],
     "/Users/danilgrebnev/Documents/colorize-navbar/src/app/tailwind/page": [],
     "/Users/danilgrebnev/Documents/colorize-navbar/src/app/nextjs/page": [],
     "/Users/danilgrebnev/Documents/colorize-navbar/src/app/cart/page": [],
