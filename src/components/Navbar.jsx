@@ -32,7 +32,7 @@ const Navbar = () => {
 
 	return (
 		<div>
-			<div className='w-1/5 relative right-0 '>
+			<div className='w-1/5 relative right-0 max-tablet:w-full'>
 				<div
 					style={{ background: elemColor }}
 					className={
@@ -42,15 +42,21 @@ const Navbar = () => {
 					}
 				>
 					<div className='w-full h-full shadow-2xl flex justify-center items-center'>
-						<p className='text-2xl font-bold flex-nowrap min-w-[300px] text-left'>
+						<p
+							className={
+								transition
+									? 'text-2xl font-bold block  min-w-[300px]   '
+									: 'text-2xl font-bold hidden  min-w-[300px]'
+							}
+						>
 							<i className='font-normal text-sm mr-6'>made by </i> Daniil
 							Grebnev
 						</p>
 					</div>
 				</div>
-				<div className='py-10 px-10'>
+				<div className='py-10 px-10 max-tablet:flex flex-wrap justify-start items-left'>
 					{navbarItems.map(item => (
-						<div key={item.id} className='cursor-pointer w-2/3'>
+						<div key={item.id} className='cursor-pointer m-1'>
 							<div className=''>
 								<div onClick={() => clickHandler(item.id)}>
 									<div

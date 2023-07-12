@@ -2,7 +2,7 @@ export const navbarItems = [
 	{
 		id: '2',
 		to: '/',
-		title: 'Main Page',
+		title: 'Main',
 		color: '#c2abae',
 	},
 	{
