@@ -51,7 +51,8 @@ const Navbar = () => {
 									: 'text-2xl font-bold transition-all relative -left-[400px] min-w-[300px]'
 							}
 						>
-							<i className='font-normal text-sm mr-6'>made by </i> Danii Grebnev
+							<i className='font-normal text-sm mr-6'>made by </i> Daniil
+							Grebnev
 						</p>
 					</div>
 				</div>
