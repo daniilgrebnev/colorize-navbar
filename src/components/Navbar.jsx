@@ -51,13 +51,12 @@ const Navbar = () => {
 									: 'text-2xl font-bold transition-all relative -left-[400px] min-w-[300px]'
 							}
 						>
-							<i className='font-normal text-sm mr-6'>made by </i> Daniil
-							Grebnev
+							<i className='font-normal text-sm mr-3'> by </i> Daniil Grebnev
 						</p>
 					</div>
 				</div>
 				<div
-					className='py-2 px-2 rounded my-2 mx-2 bg-[#00000035] text-white'
+					className='py-2 px-2 rounded text-center cursor-pointer my-2 mx-2 bg-[#00000035] text-white'
 					onClick={() => setOpenMobileNav(!openMobileNav)}
 				>
 					MENU
