@@ -45,18 +45,17 @@ const Navbar = () => {
 						<p
 							className={
 								transition
-									? 'text-2xl font-bold block  min-w-[300px]   '
-									: 'text-2xl font-bold hidden  min-w-[300px]'
+									? 'text-2xl font-bold block  left-auto min-w-[300px]   '
+									: 'text-2xl font-bold hidden -left-60 min-w-[300px]'
 							}
 						>
-							<i className='font-normal text-sm mr-6'>made by </i> Daniil
-							Grebnev
+							<i className='font-normal text-sm mr-6'>made by </i> Danii Grebnev
 						</p>
 					</div>
 				</div>
-				<div className='py-10 px-10 max-tablet:flex flex-wrap justify-start items-left'>
+				<div className='py-10 px-10 max-tablet:flex flex-wrap justify-center items-center'>
 					{navbarItems.map(item => (
-						<div key={item.id} className='cursor-pointer m-1'>
+						<div key={item.id} className='cursor-pointer '>
 							<div className=''>
 								<div onClick={() => clickHandler(item.id)}>
 									<div

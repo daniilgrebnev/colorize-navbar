@@ -47,6 +47,14 @@
         "chunks": [],
         "async": false
       }
+    },
+    "(app-client)/./src/app/shop/page.jsx": {
+      "*": {
+        "id": "(sc_client)/./src/app/shop/page.jsx",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
     }
   },
   "edgeSSRModuleMapping": {},
@@ -154,12 +162,25 @@
         "app/layout:static/chunks/app/layout.js"
       ],
       "async": false
+    },
+    "/Users/danilgrebnev/Documents/colorize-navbar/src/app/shop/page.jsx": {
+      "id": "(app-client)/./src/app/shop/page.jsx",
+      "name": "*",
+      "chunks": [
+        "app/shop/page:static/chunks/app/shop/page.js"
+      ],
+      "async": false
     }
   },
   "entryCSSFiles": {
+    "/Users/danilgrebnev/Documents/colorize-navbar/src/app/page": [],
     "/Users/danilgrebnev/Documents/colorize-navbar/src/app/layout": [
       "static/css/app/layout.css"
     ],
-    "/Users/danilgrebnev/Documents/colorize-navbar/src/app/page": []
+    "/Users/danilgrebnev/Documents/colorize-navbar/src/app/nextjs/page": [],
+    "/Users/danilgrebnev/Documents/colorize-navbar/src/app/tailwind/page": [],
+    "/Users/danilgrebnev/Documents/colorize-navbar/src/app/cart/page": [],
+    "/Users/danilgrebnev/Documents/colorize-navbar/src/app/shop/page": [],
+    "/Users/danilgrebnev/Documents/colorize-navbar/src/app/about/page": []
   }
 }

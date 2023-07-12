@@ -5,7 +5,7 @@ const Tw = () => {
 	return (
 		<div
 			style={{ background: page.color }}
-			className='text-6xl font-bold flex items-center justify-center h-screen '
+			className='text-6xl font-bold flex items-center text-center justify-center h-screen '
 		>
 			{page.title} page
 		</div>
