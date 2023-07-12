@@ -6,6 +6,7 @@ import { navbarItems } from './navArray'
 const Navbar = () => {
 	const [transition, setTransition] = useState(false)
 	const [elemColor, setElemColor] = useState('')
+	const [openMobileNav, setOpenMobileNav] = useState(false)
 	const router = useRouter()
 	const pathname = usePathname()
 
@@ -23,6 +24,7 @@ const Navbar = () => {
 		const color = navbarItems.find(item => item.id === id).color
 		const route = navbarItems.find(item => item.id === id).to
 		setElemColor(color)
+		setOpenMobileNav(false)
 
 		startTransition()
 
@@ -32,7 +34,7 @@ const Navbar = () => {
 
 	return (
 		<div>
-			<div className='w-1/5 relative right-0 max-tablet:w-full'>
+			<div className='w-1/5 relative right-0  '>
 				<div
 					style={{ background: elemColor }}
 					className={
@@ -45,19 +47,30 @@ const Navbar = () => {
 						<p
 							className={
 								transition
-									? 'text-2xl font-bold block  left-auto min-w-[300px]   '
-									: 'text-2xl font-bold hidden -left-60 min-w-[300px]'
+									? 'text-2xl font-bold transition-all relative left-auto min-w-[300px]   '
+									: 'text-2xl font-bold transition-all relative -left-[400px] min-w-[300px]'
 							}
 						>
-							<i className='font-normal text-sm mr-6'>made by </i> Daniil
-							Grebnev
+							<i className='font-normal text-sm mr-6'>made by </i> Danii Grebnev
 						</p>
 					</div>
 				</div>
-				<div className='py-10 px-10 max-tablet:flex flex-wrap justify-center items-center'>
+				<div
+					className='py-2 px-2 rounded my-2 mx-2 bg-slate-400'
+					onClick={() => setOpenMobileNav(!openMobileNav)}
+				>
+					MENU
+				</div>
+				<div
+					className={
+						openMobileNav
+							? 'py-10 px-10 left-[0px] duration-200 relative max-tablet:bg-[#00000057] transition-left'
+							: 'py-10 px-10 -left-[1000px] relative duration-200 transition-left max-tablet:bg-[#00000057]'
+					}
+				>
 					{navbarItems.map(item => (
-						<div key={item.id} className='cursor-pointer '>
-							<div className=''>
+						<div key={item.id} className='cursor-pointer w-2/3 '>
+							<div className='flex items-center justify-center'>
 								<div onClick={() => clickHandler(item.id)}>
 									<div
 										style={
@@ -69,7 +82,7 @@ const Navbar = () => {
 												: { background: item.color }
 										}
 										className={
-											'px-8 py-4 text-center text-white relative rounded-[6px] right-0 mb-5 w-full '
+											'px-8 py-4 text-center max-tablet:text-sm text-white relative rounded-[6px] right-0 mb-5 w-full '
 										}
 									>
 										{item.title}
