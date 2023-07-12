@@ -69,7 +69,7 @@ const Navbar = () => {
 					}
 				>
 					{navbarItems.map(item => (
-						<div key={item.id} className='cursor-pointer w-2/3 '>
+						<div key={item.id} className='cursor-pointer w-[350px] '>
 							<div className='flex items-center justify-center'>
 								<div onClick={() => clickHandler(item.id)}>
 									<div

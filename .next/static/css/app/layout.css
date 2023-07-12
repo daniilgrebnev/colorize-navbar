@@ -643,6 +643,9 @@ video {
 .w-2\/3 {
   width: 66.666667%;
 }
+.w-\[350px\] {
+  width: 350px;
+}
 .min-w-\[300px\] {
   min-width: 300px;
 }
