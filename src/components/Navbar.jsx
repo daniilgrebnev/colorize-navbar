@@ -69,7 +69,7 @@ const Navbar = () => {
 					}
 				>
 					{navbarItems.map(item => (
-						<div key={item.id} className='cursor-pointer w-[350px] '>
+						<div key={item.id} className='cursor-pointer'>
 							<div className='flex items-center justify-center'>
 								<div onClick={() => clickHandler(item.id)}>
 									<div
@@ -82,7 +82,7 @@ const Navbar = () => {
 												: { background: item.color }
 										}
 										className={
-											'px-8 py-4 text-center max-tablet:text-sm text-white relative rounded-[6px] right-0 mb-5 w-full '
+											'px-8 py-4 text-center w-[350px] max-tablet:text-sm text-white relative rounded-[6px] right-0 mb-5  '
 										}
 									>
 										{item.title}
