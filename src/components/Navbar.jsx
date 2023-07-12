@@ -28,7 +28,7 @@ const Navbar = () => {
 
 		startTransition()
 
-		setTimeout(() => redirect(route), 300)
+		setTimeout(() => redirect(route), 400)
 		setTimeout(endTransition, 1000)
 	}
 
