@@ -1,6 +1,9 @@
 {
   "/page": "app/page.js",
-  "/tailwind/page": "app/tailwind/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
   "/nextjs/page": "app/nextjs/page.js",
-  "/cart/page": "app/cart/page.js"
+  "/tailwind/page": "app/tailwind/page.js",
+  "/shop/page": "app/shop/page.js",
+  "/cart/page": "app/cart/page.js",
+  "/about/page": "app/about/page.js"
 }
