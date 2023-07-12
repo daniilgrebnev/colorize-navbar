@@ -49,7 +49,8 @@ const Navbar = () => {
 									: 'text-2xl font-bold hidden -left-60 min-w-[300px]'
 							}
 						>
-							<i className='font-normal text-sm mr-6'>made by </i> Danii Grebnev
+							<i className='font-normal text-sm mr-6'>made by </i> Daniil
+							Grebnev
 						</p>
 					</div>
 				</div>
