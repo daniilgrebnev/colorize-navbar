@@ -5,7 +5,7 @@ const Next = () => {
 	return (
 		<div
 			style={{ background: page.color }}
-			className='text-6xl font-bold flex items-center justify-center h-screen '
+			className='text-6xl font-bold flex items-center justify-center h-screen text-white'
 		>
 			{page.title} page
 		</div>

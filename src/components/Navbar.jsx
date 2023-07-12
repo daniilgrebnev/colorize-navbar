@@ -56,7 +56,7 @@ const Navbar = () => {
 					</div>
 				</div>
 				<div
-					className='py-2 px-2 rounded my-2 mx-2 bg-[#ffffffa3]'
+					className='py-2 px-2 rounded my-2 mx-2 bg-[#00000035] text-white'
 					onClick={() => setOpenMobileNav(!openMobileNav)}
 				>
 					MENU
